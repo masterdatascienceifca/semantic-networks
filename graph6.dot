@@ -1,0 +1,21 @@
+digraph ejemplo {
+node  [style="rounded,filled,bold", shape=box, fontname="Nimbus", color="lightgray"];
+edge  [fontname="Nimbus" weight=2, fontsize=12]
+
+A -> B [ label = "instancia" ];
+A -> C [ label = "vendedor"];
+A -> D [ label = "comprador"];
+A -> E [ label = "objeto"];
+A -> F [ label = "precio"];
+E -> G [ label = "instancia"];
+F -> H [ label = "unidad"];
+
+A [label="CompraVenta1"];
+B [label="CompraVenta"];
+C [label="Luis"];
+D [label="Pepe"];
+E [label="Reloj1"];
+F [label="45"];
+G [label="Reloj"];
+H [label="Euro"];
+}

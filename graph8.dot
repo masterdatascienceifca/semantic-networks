@@ -1,0 +1,18 @@
+digraph ejemplo {
+node  [style="rounded,filled,bold", shape=box, fontname="Nimbus", color="lightgray"];
+edge  [fontname="Nimbus" weight=2, fontsize=12]
+
+H -> G [ label = "instancia"];
+H -> I [ label = "agente"];
+H -> J [ label = "objeto"];
+J -> K [ label = "instancia"];
+H -> L [ label = "lugar"];
+
+G [label="Suceso_ver"];
+H [label="Ver_?"];
+I [label="Varón?"];
+J [label="El Prado"];
+K [label="Museo"];
+L [label="Madrid"];
+
+}

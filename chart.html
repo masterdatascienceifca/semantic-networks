@@ -1,0 +1,115 @@
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<!--Load the AJAX API-->
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load('visualization', '1', {packages: ['controls']});
+google.setOnLoadCallback(drawChart);
+
+function drawChart () {
+	$.ajax({
+	    type: 'Get',
+	//building-census-type-size-municipality-number-property
+	//census-1900-2001.google-json
+	//private-housing-annual.google-json
+	    url: 'https://www.icane.es/data/api/private-housing-annual.google-json',dataType: 'json'}).done(function(icaneSeries) {
+	         
+	        // Create the data table.
+	        var data = new google.visualization.DataTable(icaneSeries.data);
+	 
+		
+		$.each(icaneSeries.metadata, function(i,metadata)
+	{
+
+	var html = '<tr><td>'+i+'</td>'+'<td>'+metadata.value+'</td></tr>';
+	$('#table').append(html);
+
+
+	});
+
+	   
+    var columnsTable = new google.visualization.DataTable();
+    columnsTable.addColumn('number', 'colIndex');
+    columnsTable.addColumn('string', 'colLabel');
+    var initState= {selectedValues: []};
+    // put the columns into this data table (skip column 0)
+    for (var i = 1; i < data.getNumberOfColumns(); i++) {
+        columnsTable.addRow([i, data.getColumnLabel(i)]);
+        // you can comment out this next line if you want to have a default selection other than the whole list
+        initState.selectedValues.push(data.getColumnLabel(i));
+    }
+    // you can set individual columns to be the default columns (instead of populating via the loop above) like this:
+    // initState.selectedValues.push(data.getColumnLabel(4));
+    
+    var chart = new google.visualization.ChartWrapper({
+        chartType: 'LineChart',
+        containerId: 'chart_div',
+        dataTable: data,
+        options: {
+            title: icaneSeries.metadata.Unidades.value,
+            width: 600,
+            height: 400
+        }
+    });
+    
+    var columnFilter = new google.visualization.ControlWrapper({
+        controlType: 'CategoryFilter',
+        containerId: 'colFilter_div',
+        dataTable: columnsTable,
+        options: {
+            filterColumnLabel: 'colLabel',
+            ui: {
+                label: 'Columns',
+                allowTyping: false,
+                allowMultiple: true,
+                allowNone: false,
+                selectedValuesLayout: 'belowStacked'
+            }
+        },
+        state: initState
+    });
+    
+    function setChartView () {
+        var state = columnFilter.getState();
+        var row;
+        var view = {
+            columns: [0]
+        };
+        for (var i = 0; i < state.selectedValues.length; i++) {
+            row = columnsTable.getFilteredRows([{column: 1, value: state.selectedValues[i]}])[0];
+            view.columns.push(columnsTable.getValue(row, 0));
+        }
+        // sort the indices into their original order
+        view.columns.sort(function (a, b) {
+            return (a - b);
+        });
+        chart.setView(view);
+        chart.draw();
+    }
+    google.visualization.events.addListener(columnFilter, 'statechange', setChartView);
+    
+    setChartView();
+    columnFilter.draw();
+	    }).fail(function(){
+	    	if (console && console.log) {
+	    	console.log("Error");
+	    	}
+	    	});
+}
+</script>
+
+
+</head>
+
+<body>
+	<!--Div that will hold the pie chart-->
+	<div id="colFilter_div"></div>
+	<div id="chart_div"></div>
+	<table id="table" border="1">
+		<tr>
+			<th>Metadato</th>
+			<th>Valor</th>
+		</tr>
+	</table>

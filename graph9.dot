@@ -1,0 +1,31 @@
+digraph ejemplo {
+node  [style="rounded,filled,bold", shape=box, fontname="Nimbus", color="lightgray"];
+edge  [fontname="Nimbus" weight=2, fontsize=12]
+
+A -> B [ label = "instancia"];
+G -> B [ label = "instancia"];
+G -> H [ label = "instancia"];
+A -> C [ label = "instancia"];
+C -> I [ label = "subclase-de"];
+H -> I [ label = "subclase-de"];
+J -> I [ label = "subclase-de"];
+B -> J [ label = "subclase-de"];
+B -> E [ label = "de-color"];
+D -> E [ label = "de-color"];
+F -> E [ label = "de-color"];
+D -> J [ label = "subclase-de"];
+F -> J [ label = "subclase-de"];
+
+
+A [label="Dumbo"];
+B [label="Elefante"];
+C [label="Macho"];
+D [label="Ballena"];
+E [label="Gris"];
+F [label="Delfín"];
+G [label="Mrs. Jumbo"];
+H [label="Hembra"];
+I [label="Animal"];
+J [label="Mamífero"];
+
+}

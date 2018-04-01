@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Servicios de datos en la estadística pública</title>
+
+		<meta name="description" content="Redes semánticas">
+		<meta name="author" content="Miguel Expósito Martín">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+					# Redes semánticas
+
+					</script>
+				</section>
+				<section>
+
+					<section data-id="1" data-markdown>
+						<script type="text/template">
+							## introducción
+
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							### modelos de representación del conocimiento
+							- conceptual
+							- formal
+							- computable
+
+
+							</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							### ¿qué es formalizar?
+							representar simbólicamente
+							+
+							organizar
+							+
+							determinar métodos de inferencia adecuados
+
+							conocimientos de un dominio
+
+
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							### tipos de formalismos
+							- basados en conceptos: tripletas, marcos
+							- basados en relaciones: lógica, **redes semánticas**
+							- basados en acciones: sistemas de producción, guiones
+
+						</script>
+					</section>
+
+	</section>
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## definición
+
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							>formalismo de representación del conocimiento basado en **relaciones**
+
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							>un grafo orientado formado por nodos y arcos unidireccionales, ambos etiquetados
+
+							![Red semántica básica](./img/grafo.svg)
+
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+                        componentes:
+                        - nodos: conceptos e instancias
+                        - arcos: relaciones entre conceptos e instancias
+
+                        características:
+                        - falta de terminología adecuada y universalmente aceptada
+                        - atractivo gráfico e intuitiva interpretación
+
+						</script>
+					</section>
+
+				</section>
+                <section>
+				<section data-markdown>
+					<script type="text/template">
+						## representación de conocimiento
+
+
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						>la base de la representación del conocimiento en redes semánticas consiste en modelar los conocimientos relativos a un objeto o concepto mediante pares **atributo-valor**
+
+						- nodo origen = objeto o concepto
+						- arco = atributo
+						- nodo destino = valor del atributo
+
+					</script>
+
+				</section>
+
+                <section data-markdown>
+                <script type="text/template">
+                #### arcos descriptivos
+
+                > describen entidades y conceptos, bien relacionando entidades independientes ya existentes bien definiendo una nueva entidad.
+
+                ![Arcos descriptivos](./img/grafo2.svg)
+
+                </script>
+
+                </section>
+
+                <section data-markdown>
+                <script type="text/template">
+                #### arcos estructurales
+
+                > enlazan las entidades o conceptos formando la arquitectura o estructura de la red.
+
+                ejemplos: subclase-de, instancia, parte-de
+
+                </script>
+
+                </section>
+
+                <section data-markdown>
+                <script type="text/template">
+                #### arcos estructurales
+
+                - **generalización**: relación de una clase con otra más general, formando una red de nodos por especialización de conceptos.
+
+                ![Generalización](./img/grafo3.svg)
+
+                </script>
+
+                </section>
+
+                <section data-markdown>
+                <script type="text/template">
+                #### arcos estructurales
+
+                - **instancia**: liga un objeto concreto con su tipo genérico.
+
+                ![Instancia](./img/grafo4.svg)
+
+                </script>
+
+                </section>
+
+                <section data-markdown>
+                <script type="text/template">
+                #### arcos estructurales
+                - **agregación**: liga un objeto a sus componentes.
+
+                ![Agregación](./img/grafo5.svg)
+                </script>
+
+                </section>
+
+
+
+                </section>
+
+            <section>
+            <section data-markdown>
+            <script type="text/template">
+            ### ¿Cómo representar predicados n-arios?
+
+            por ejemplo, una relación de compraventa de un reloj entre Pepe y Luis
+            </script>
+
+            </section>
+            <section data-markdown>
+            <script type="text/template">
+            ### Representación de predicados no binarios
+            - Un nuevo objeto representa al predicado de aridad mayor que dos
+            - Nuevos predicados binarios describen las relaciones entre este nuevo objeto y sus argumentos
+
+            ![Predicados no binarios](./img/grafo6.svg)
+            </script>
+
+            </section>
+
+            </section>
+
+            <section>
+            <section data-markdown>
+            <script type="text/template">
+            ### ¿Cómo representar acciones?
+
+            Problema: mezcla de arcos que representan atributos con arcos que representan acciones.
+
+            **Ocasiona problemas desde el punto de vista de la inferencia**
+
+            </script>
+
+            </section>
+
+
+            <section data-markdown>
+            <script type="text/template">
+            ### Representación de acciones
+
+            Adaptación de conceptos de la gramática de casos de Fillmore:
+
+            verbo + frases nominales relacionadas con casos
+
+            </script>
+
+            </section>
+
+            <section data-markdown>
+            <script type="text/template">
+            ### casos
+
+            - Agente: persona que realiza el evento.
+            - Contra-agente: fuerza o resistencia contra la que se ejecuta la acción.
+            - Objeto: entidad movida, cambiada, cuya posición o existencia se considera.
+            - Resultado: entidad consecuencia de la acción.
+            - Instrumento: estímulo o causa física de un evento.
+
+            </script>
+
+            </section>
+
+            <section data-markdown>
+            <script type="text/template">
+            ### casos
+
+            - Origen: lugar del que procede el evento.
+            - Propósito: motivo por el que se ejecuta la acción.
+            - Lugar: sitio en el que se desarrolla la acción.
+            - Tiempo: fecha o momento en el que tiene lugar la acción.
+            - Sujeto: entidad que recibe, acepta o experimenta el efecto de la acción.
+            </script>
+
+            </section>
+
+            <section data-markdown>
+            <script type="text/template">
+            ### modalidad
+            características que presenta el verbo:
+
+            - tiempo en el que se ha desarrollado la acción (pasado, presente, futuro).
+            - voz: activa, pasiva.
+            </script>
+            </section>
+            <section data-markdown>
+            <script type="text/template">
+            ### representación
+            **nodos situación o suceso** tienen como atributos:
+
+            - conjunto de casos
+            - conjunto de modalidades
+            </script>
+
+            </section>
+
+            <section data-markdown>
+            <script type="text/template">
+            ### ejemplo
+
+            >Luis sabe que Pepe vio El Prado en Madrid
+
+            ![Ejemplo acciones](./img/grafo7.svg)
+
+            </script>
+
+            </section>
+
+            </section>
+            <section>
+            <section data-markdown>
+            <script type="text/template">
+            ### representación del conocimiento disjunto
+
+            - arcos "disjunto"
+            - Hendrix: Subconjunto, Subconjunto disjunto, Elemento, Elemento disjunto
+
+            </script>
+            </section>
+            </section>
+                <section>
+                <section data-markdown>
+                <script type="text/template">
+                ### inferencia de conocimiento
+
+                extracción de conocimiento nuevo a partir de hechos considerados como ciertos
+
+                ejemplo:
+
+                si Pipo es un perro y los perros son mamíferos, entonces Pipo es un mamífero
+
+                </script>
+                </section>
+                </section>
+                <section>
+                <section data-markdown>
+                <script type="text/template">
+                ### inferencia por equiparación
+
+                > Un fragmento de red, apunte o consulta se equipara con una red semántica si dicho apunte se puede asociar con un fragmento de dicha red.
+
+                ejemplo de consulta:
+
+                *¿Existe algún varón que viera un museo en Madrid?*
+
+                </script>
+                </section>
+
+                <section data-markdown>
+                <script type="text/template">
+                ### inferencia por equiparación
+
+                pasos
+
+                1. Construcción
+                2. Cotejo
+                3. Equiparación
+                4. Respuesta
+
+
+                </script>
+                </section>
+
+                <section data-markdown>
+                <script type="text/template">
+                ### inferencia por equiparación
+
+                construcción
+
+                - Se construye un apunte que responda a la pregunta.
+                - Estará formado por nodos constantes, nodos variables y arcos etiquetados.
+
+                ![Apunte](./img/grafo8.svg)
+
+
+                </script>
+                </section>
+
+                <section data-markdown>
+                <script type="text/template">
+                ### inferencia por equiparación
+
+                cotejo
+
+                - Se superpone el apunte sobre la red semántica.
+
+
+                </script>
+                </section>
+
+                <section data-markdown>
+                <script type="text/template">
+                ### inferencia por equiparación
+
+               equiparación
+
+                - Los nodos variables se ligan a los constantes hasta encontrar una equiparación perfecta
+
+
+                </script>
+                </section>
+
+                <section data-markdown>
+                <script type="text/template">
+                ### inferencia por equiparación
+
+                respuesta
+
+                - La respuesta es el fragmento de red semántica con los valores con los que se rellenan los nodos variables.
+
+
+                </script>
+                </section>
+
+                </section>
+
+            <section>
+
+            <section data-markdown>
+            <script type="text/template">
+            ### inferencia por herencia de propiedades
+
+            >Permite que nodos específicos de una red accedan a propiedades definidas en otros nodos utilizando los arcos *instancia* y *subclase-de*
+
+            - Favorece la compartición de propiedades, evitando la repetición de propiedades en la base de conocimiento.
+            - Se utiliza en sistemas que razonan dirigidos por la meta o por los datos.
+
+            </script>
+            </section>
+
+            <section data-markdown>
+            <script type="text/template">
+            ### inferencia por herencia de propiedades
+
+            ![Herencia](./img/grafo9.svg)
+
+            </script>
+            </section>
+
+            <section data-markdown>
+            <script type="text/template">
+            ### inferencia por herencia de propiedades
+
+            Funciona muy bien con propiedades que presentan excepciones en sus valores: se hereda el valor de la propiedad del nodo más cercano al de partida.
+
+            ![Excepciones en herencia](./img/grafo10.svg)
+
+
+            </script>
+            </section>
+
+            <section data-markdown>
+            <script type="text/template">
+            ### inferencia por herencia de propiedades
+
+            Origina problemas si se han formalizado mal los conocimientos:
+
+            - No se distinguen nodos instancias de nodos concepto.
+            - La etiqueta que da nombre al nodo o al arco tiene una semántica diferente al conocimiento que se quiere representar.
+            - El arco está en sentido contrario.
+            - No se han representado situaciones o acciones utiliznado nodos situación.
+
+
+            </script>
+            </section>
+
+            <section data-markdown>
+            <script type="text/template">
+            ### inferencia por herencia de propiedades
+
+            ![Problemas en herencia](./img/grafo11.svg)
+
+
+            </script>
+            </section>
+            </section>
+
+				</div>
+
+			</div>
+
+			<script src="lib/js/head.min.js"></script>
+			<script src="js/reveal.js"></script>
+
+			<script>
+
+				// Full list of configuration options available at:
+				// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// Optional reveal.js plugins
+			dependencies: [
+			{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true },
+			{ src: 'plugin/tagcloud/tagcloud.js', async: true },
+			{ src: 'plugin/chalkboard/chalkboard.js' },
+			{ src: 'plugin/notes/notes.js', async: true }
+			],
+			keyboard: {
+				67: function() { RevealChalkboard.toggleNotesCanvas() },	// toggle notes canvas when 'c' is pressed
+				66: function() { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
+				46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
+				 8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide when 'BACKSPACE' is pressed
+				68: function() { RevealChalkboard.download() },	// downlad recorded chalkboard drawing when 'd' is pressed
+			}
+			});
+
+			</script>
+
+		</body>
+	</html>

@@ -1,0 +1,18 @@
+digraph ejemplo {
+node  [style="rounded,filled,bold", shape=box, fontname="Nimbus", color="lightgray"];
+edge  [fontname="Nimbus" weight=2, fontsize=12]
+
+A -> B [ label = "instancia"];
+D -> B [ label = "instancia"];
+B -> C [ label = "color"];
+D -> E [ label = "color"];
+
+
+A [label="Maguila"];
+B [label="Gorila"];
+C [label="Marrón"];
+D [label="Copito de nieve"];
+E [label="Blanco"];
+
+
+}

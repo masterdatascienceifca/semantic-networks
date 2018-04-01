@@ -1,0 +1,32 @@
+digraph ejemplo {
+node  [style="rounded,filled,bold", shape=box, fontname="Nimbus", color="lightgray"];
+edge  [fontname="Nimbus" weight=2, fontsize=12]
+
+subgraph cluster_1 {
+A -> B [ label = "subclase-de"];
+B -> C [ label = "tiene"];
+A -> D [ label = "subclase-de"];
+D -> E [ label = "estudiado-por"];
+}
+
+subgraph cluster_2 {
+F -> G [ label = "subclase-de"];
+G -> H [ label = "tiene"];
+F -> I [ label = "subclase-de"];
+J -> I [ label = "estudian"];
+}
+
+A [label="Gorrión"];
+B [label="Pájaro"];
+C [label="Alas"];
+D [label="Especie en observación"];
+E [label="Biólogos"];
+
+F [label="Gorrión"];
+G [label="Pájaro"];
+H [label="Alas"];
+I [label="Especie en observación"];
+J [label="Biólogos"];
+
+
+}
