@@ -16,6 +16,7 @@ J -> K [ label = "instancia"];
 H -> L [ label = "lugar"];
 H -> M [ label = "tiempo"];
 H -> N [ label = "voz"];
+A -> H [ label = "objeto"];
 
 A [label="Saber_1"];
 B [label="Suceso_saber"];
