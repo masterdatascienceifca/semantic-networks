@@ -1,0 +1,17 @@
+digraph ejercicio2 {
+node  [style="rounded,filled,bold", shape=box, fontname="Nimbus", color="lightgray"];
+edge  [fontname="Nimbus" weight=2, fontsize=12]
+
+D -> A [ label = "agente" ];
+D -> B [ label = "objeto"];
+D -> C [ label = "sujeto"];
+D -> E [ label = "instancia-de"];
+E -> F [ label = "subclase-de"];
+
+A [label="Juan"];
+B [label="libro"];
+C [label="Maria"];
+D [label="Dar_1"];
+E [label="Suceso_dar"];
+F [label="Suceso"];
+}
