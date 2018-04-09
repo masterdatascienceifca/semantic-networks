@@ -58,9 +58,9 @@
 					<section data-markdown>
 						<script type="text/template">
 							### modelos de representación del conocimiento
-							- conceptual
-							- formal
-							- computable
+							- conceptual<!-- .element: class="fragment" data-fragment-index="1" -->
+							- formal<!-- .element: class="fragment" data-fragment-index="2" -->
+							- computable<!-- .element: class="fragment" data-fragment-index="3" -->
 
 
 							</script>
@@ -69,13 +69,11 @@
 					<section data-markdown>
 						<script type="text/template">
 							### ¿qué es formalizar?
-							representar simbólicamente
-							+
-							organizar
-							+
-							determinar métodos de inferencia adecuados
+							- representar simbólicamente<!-- .element: class="fragment" data-fragment-index="1" -->
+							- organizar<!-- .element: class="fragment" data-fragment-index="2" -->
+							- determinar métodos de inferencia adecuados<!-- .element: class="fragment" data-fragment-index="3" -->
 
-							conocimientos de un dominio
+							los conocimientos de un dominio<!-- .element: class="fragment" data-fragment-index="4" -->
 
 
 						</script>
@@ -84,9 +82,9 @@
 					<section data-markdown>
 						<script type="text/template">
 							### tipos de formalismos
-							- basados en conceptos: tripletas, marcos
-							- basados en relaciones: lógica, **redes semánticas**
-							- basados en acciones: sistemas de producción, guiones
+							- basados en conceptos: tripletas, marcos<!-- .element: class="fragment" data-fragment-index="1" -->
+							- basados en relaciones: lógica,<!-- .element: class="fragment" data-fragment-index="2" --> **redes semánticas**<!-- .element: class="fragment" data-fragment-index="2" -->
+							- basados en acciones: sistemas de producción, guiones<!-- .element: class="fragment" data-fragment-index="3" -->
 
 						</script>
 					</section>
@@ -112,23 +110,29 @@
 						<script type="text/template">
 							>un grafo orientado formado por nodos y arcos unidireccionales, ambos etiquetados
 
-							![Red semántica básica](./img/grafo.svg)
+							![Red semántica básica](./img/grafo.svg)<!-- .element: class="fragment" data-fragment-index="2" -->
 
 						</script>
 					</section>
 
 					<section data-markdown>
 						<script type="text/template">
-                        componentes:
-                        - nodos: conceptos e instancias
-                        - arcos: relaciones entre conceptos e instancias
+                        ### componentes:
+                        - nodos: conceptos e instancias<!-- .element: class="fragment" data-fragment-index="1" -->
+                        - arcos: relaciones entre conceptos e instancias<!-- .element: class="fragment" data-fragment-index="2" -->
 
-                        características:
-                        - falta de terminología adecuada y universalmente aceptada
-                        - atractivo gráfico e intuitiva interpretación
 
 						</script>
 					</section>
+                    <section data-markdown>
+                    <script type="text/template">
+                    ### características:
+                    - falta de terminología adecuada y universalmente aceptada<!-- .element: class="fragment" data-fragment-index="1" -->
+                    - atractivo gráfico e intuitiva interpretación<!-- .element: class="fragment" data-fragment-index="2" -->
+                    - representan un conjunto restringido de la lógica de predicados<!-- .element: class="fragment" data-fragment-index="3" -->
+
+                    </script>
+                    </section>
 
 				</section>
                 <section>
@@ -141,11 +145,11 @@
 				</section>
 				<section data-markdown>
 					<script type="text/template">
-						>la base de la representación del conocimiento en redes semánticas consiste en modelar los conocimientos relativos a un objeto o concepto mediante pares **atributo-valor**
+						>la base de la representación del conocimiento en redes semánticas consiste en modelar los conocimientos relativos a un objeto o concepto mediante pares<!-- .element: class="fragment" data-fragment-index="1" --> **atributo-valor**<!-- .element: class="fragment" data-fragment-index="1" -->
 
-						- nodo origen = objeto o concepto
-						- arco = atributo
-						- nodo destino = valor del atributo
+						- nodo origen = objeto o concepto<!-- .element: class="fragment" data-fragment-index="2" -->
+						- arco = atributo<!-- .element: class="fragment" data-fragment-index="3" -->
+						- nodo destino = valor del atributo<!-- .element: class="fragment" data-fragment-index="4" -->
 
 					</script>
 
@@ -155,21 +159,9 @@
                 <script type="text/template">
                 #### arcos descriptivos
 
-                > describen entidades y conceptos, bien relacionando entidades independientes ya existentes bien definiendo una nueva entidad.
+                > describen entidades y conceptos, bien relacionando entidades independientes ya existentes bien definiendo una nueva entidad.<!-- .element: class="fragment" data-fragment-index="1" -->
 
-                ![Arcos descriptivos](./img/grafo2.svg)
-
-                </script>
-
-                </section>
-
-                <section data-markdown>
-                <script type="text/template">
-                #### arcos estructurales
-
-                > enlazan las entidades o conceptos formando la arquitectura o estructura de la red.
-
-                ejemplos: subclase-de, instancia, parte-de
+                ![Arcos descriptivos](./img/grafo2.svg)<!-- .element: class="fragment" data-fragment-index="2" -->
 
                 </script>
 
@@ -179,9 +171,21 @@
                 <script type="text/template">
                 #### arcos estructurales
 
-                - **generalización**: relación de una clase con otra más general, formando una red de nodos por especialización de conceptos.
+                > enlazan las entidades o conceptos formando la arquitectura o estructura de la red.<!-- .element: class="fragment" data-fragment-index="1" -->
 
-                ![Generalización](./img/grafo3.svg)
+                ejemplos: subclase-de, instancia, parte-de<!-- .element: class="fragment" data-fragment-index="2" -->
+
+                </script>
+
+                </section>
+
+                <section data-markdown>
+                <script type="text/template">
+                #### arcos estructurales
+
+                - <!-- .element: class="fragment" data-fragment-index="1" -->**generalización**<!-- .element: class="fragment" data-fragment-index="1" -->: relación de una clase con otra más general, formando una red de nodos por especialización de conceptos.<!-- .element: class="fragment" data-fragment-index="1" -->
+
+                ![Generalización](./img/grafo3.svg)<!-- .element: class="fragment" data-fragment-index="2" -->
 
                 </script>
 
@@ -191,9 +195,9 @@
                 <script type="text/template">
                 #### arcos estructurales
 
-                - **instancia**: liga un objeto concreto con su tipo genérico.
+                - <!-- .element: class="fragment" data-fragment-index="1" -->**instancia**<!-- .element: class="fragment" data-fragment-index="1" -->: liga un objeto concreto con su tipo genérico.<!-- .element: class="fragment" data-fragment-index="1" -->
 
-                ![Instancia](./img/grafo4.svg)
+                ![Instancia](./img/grafo4.svg)<!-- .element: class="fragment" data-fragment-index="2" -->
 
                 </script>
 
@@ -202,9 +206,9 @@
                 <section data-markdown>
                 <script type="text/template">
                 #### arcos estructurales
-                - **agregación**: liga un objeto a sus componentes.
+                - <!-- .element: class="fragment" data-fragment-index="1" -->**agregación**<!-- .element: class="fragment" data-fragment-index="1" -->: liga un objeto a sus componentes.<!-- .element: class="fragment" data-fragment-index="1" -->
 
-                ![Agregación](./img/grafo5.svg)
+                ![Agregación](./img/grafo5.svg)<!-- .element: class="fragment" data-fragment-index="2" -->
                 </script>
 
                 </section>
@@ -218,17 +222,17 @@
             <script type="text/template">
             ### ¿Cómo representar predicados n-arios?
 
-            por ejemplo, una relación de compraventa de un reloj entre Pepe y Luis
+            por ejemplo, una relación de compraventa de un reloj entre Pepe y Luis<!-- .element: class="fragment" data-fragment-index="1" -->
             </script>
 
             </section>
             <section data-markdown>
             <script type="text/template">
             ### Representación de predicados no binarios
-            - Un nuevo objeto representa al predicado de aridad mayor que dos
-            - Nuevos predicados binarios describen las relaciones entre este nuevo objeto y sus argumentos
+            - Un nuevo objeto representa al predicado de aridad mayor que dos<!-- .element: class="fragment" data-fragment-index="1" -->
+            - Nuevos predicados binarios describen las relaciones entre este nuevo objeto y sus argumentos<!-- .element: class="fragment" data-fragment-index="2" -->
 
-            ![Predicados no binarios](./img/grafo6.svg)
+            ![Predicados no binarios](./img/grafo6.svg)<!-- .element: class="fragment" data-fragment-index="3" -->
             </script>
 
             </section>
@@ -240,9 +244,18 @@
             <script type="text/template">
             ### ¿Cómo representar acciones?
 
-            Problema: mezcla de arcos que representan atributos con arcos que representan acciones.
+            Ej: "pepe vio un museo"
 
-            **Ocasiona problemas desde el punto de vista de la inferencia**
+            </script>
+
+            </section>
+            <section data-markdown>
+            <script type="text/template">
+            ### ¿Cómo representar acciones?
+
+            ![Arcos con acciones](./img/grafo12.svg)
+
+            **Problemas desde el punto de vista de la inferencia**
 
             </script>
 
@@ -253,7 +266,7 @@
             <script type="text/template">
             ### Representación de acciones
 
-            Adaptación de conceptos de la gramática de casos de Fillmore:
+            Adaptación de conceptos de la [gramática de casos de Fillmore](http://linguistics.berkeley.edu/~syntax-circle/syntax-group/spr08/fillmore.pdf):
 
             verbo + frases nominales relacionadas con casos
 
@@ -265,11 +278,11 @@
             <script type="text/template">
             ### casos
 
-            - Agente: persona que realiza el evento.
-            - Contra-agente: fuerza o resistencia contra la que se ejecuta la acción.
-            - Objeto: entidad movida, cambiada, cuya posición o existencia se considera.
-            - Resultado: entidad consecuencia de la acción.
-            - Instrumento: estímulo o causa física de un evento.
+            - Agente: persona que realiza el evento.<!-- .element: class="fragment" data-fragment-index="1" -->
+            - Contra-agente: fuerza o resistencia contra la que se ejecuta la acción.<!-- .element: class="fragment" data-fragment-index="2" -->
+            - Objeto: entidad movida, cambiada, cuya posición o existencia se considera.<!-- .element: class="fragment" data-fragment-index="3" -->
+            - Resultado: entidad consecuencia de la acción.<!-- .element: class="fragment" data-fragment-index="4" -->
+            - Instrumento: estímulo o causa física de un evento.<!-- .element: class="fragment" data-fragment-index="5" -->
 
             </script>
 
@@ -279,11 +292,11 @@
             <script type="text/template">
             ### casos
 
-            - Origen: lugar del que procede el evento.
-            - Propósito: motivo por el que se ejecuta la acción.
-            - Lugar: sitio en el que se desarrolla la acción.
-            - Tiempo: fecha o momento en el que tiene lugar la acción.
-            - Sujeto: entidad que recibe, acepta o experimenta el efecto de la acción.
+            - Origen: lugar del que procede el evento.<!-- .element: class="fragment" data-fragment-index="1" -->
+            - Propósito: motivo por el que se ejecuta la acción.<!-- .element: class="fragment" data-fragment-index="2" -->
+            - Lugar: sitio en el que se desarrolla la acción.<!-- .element: class="fragment" data-fragment-index="3" -->
+            - Tiempo: fecha o momento en el que tiene lugar la acción.<!-- .element: class="fragment" data-fragment-index="4" -->
+            - Sujeto: entidad que recibe, acepta o experimenta el efecto de la acción.<!-- .element: class="fragment" data-fragment-index="5" -->
             </script>
 
             </section>
@@ -291,19 +304,19 @@
             <section data-markdown>
             <script type="text/template">
             ### modalidad
-            características que presenta el verbo:
+            características que presenta el verbo:<!-- .element: class="fragment" data-fragment-index="1" -->
 
-            - tiempo en el que se ha desarrollado la acción (pasado, presente, futuro).
-            - voz: activa, pasiva.
+            - tiempo en el que se ha desarrollado la acción (pasado, presente, futuro).<!-- .element: class="fragment" data-fragment-index="2" -->
+            - voz: activa, pasiva.<!-- .element: class="fragment" data-fragment-index="3" -->
             </script>
             </section>
             <section data-markdown>
             <script type="text/template">
             ### representación
-            **nodos situación o suceso** tienen como atributos:
+            a través de <!-- .element: class="fragment" data-fragment-index="1" -->**nodos situación o suceso**<!-- .element: class="fragment" data-fragment-index="1" --> que tienen como atributos:<!-- .element: class="fragment" data-fragment-index="1" -->
 
-            - conjunto de casos
-            - conjunto de modalidades
+            - conjunto de casos<!-- .element: class="fragment" data-fragment-index="2" -->
+            - conjunto de modalidades<!-- .element: class="fragment" data-fragment-index="3" -->
             </script>
 
             </section>
@@ -312,9 +325,9 @@
             <script type="text/template">
             ### ejemplo
 
-            >Luis sabe que Pepe vio El Prado en Madrid
+            >Luis sabe que Pepe vio El Prado en Madrid<!-- .element: class="fragment" data-fragment-index="1" -->
 
-            ![Ejemplo acciones](./img/grafo7.svg)
+            ![Ejemplo acciones](./img/grafo7.svg)<!-- .element: class="fragment" data-fragment-index="2" -->
 
             </script>
 
@@ -326,8 +339,8 @@
             <script type="text/template">
             ### representación del conocimiento disjunto
 
-            - arcos "disjunto"
-            - Hendrix: Subconjunto, Subconjunto disjunto, Elemento, Elemento disjunto
+            - arcos "disjunto"<!-- .element: class="fragment" data-fragment-index="1" -->
+            - <!-- .element: class="fragment" data-fragment-index="2" -->[Hendrix](https://www.ijcai.org/Proceedings/75/Papers/016.pdf)<!-- .element: class="fragment" data-fragment-index="2" -->: Subconjunto, Subconjunto disjunto, Elemento, Elemento disjunto<!-- .element: class="fragment" data-fragment-index="2" -->
 
             </script>
             </section>
@@ -337,11 +350,11 @@
                 <script type="text/template">
                 ### inferencia de conocimiento
 
-                extracción de conocimiento nuevo a partir de hechos considerados como ciertos
+                >extracción de conocimiento nuevo a partir de hechos considerados como ciertos<!-- .element: class="fragment" data-fragment-index="1" -->
 
-                ejemplo:
+                ejemplo:<!-- .element: class="fragment" data-fragment-index="2" -->
 
-                si Pipo es un perro y los perros son mamíferos, entonces Pipo es un mamífero
+                si Pipo es un perro y los perros son mamíferos, entonces Pipo es un mamífero<!-- .element: class="fragment" data-fragment-index="2" -->
 
                 </script>
                 </section>
@@ -351,11 +364,11 @@
                 <script type="text/template">
                 ### inferencia por equiparación
 
-                > Un fragmento de red, apunte o consulta se equipara con una red semántica si dicho apunte se puede asociar con un fragmento de dicha red.
+                > Un fragmento de red, apunte o consulta se equipara con una red semántica si dicho apunte se puede asociar con un fragmento de dicha red.<!-- .element: class="fragment" data-fragment-index="1" -->
 
-                ejemplo de consulta:
+                ejemplo de consulta:<!-- .element: class="fragment" data-fragment-index="2" -->
 
-                *¿Existe algún varón que viera un museo en Madrid?*
+                *¿Existe algún varón que viera un museo en Madrid?*<!-- .element: class="fragment" data-fragment-index="2" -->
 
                 </script>
                 </section>
@@ -379,24 +392,12 @@
                 <script type="text/template">
                 ### inferencia por equiparación
 
-                construcción
+                construcción<!-- .element: class="fragment" data-fragment-index="1" -->
 
-                - Se construye un apunte que responda a la pregunta.
-                - Estará formado por nodos constantes, nodos variables y arcos etiquetados.
+                - Se construye un apunte que responda a la pregunta.<!-- .element: class="fragment" data-fragment-index="2" -->
+                - Estará formado por nodos constantes, nodos variables y arcos etiquetados.<!-- .element: class="fragment" data-fragment-index="3" -->
 
-                ![Apunte](./img/grafo8.svg)
-
-
-                </script>
-                </section>
-
-                <section data-markdown>
-                <script type="text/template">
-                ### inferencia por equiparación
-
-                cotejo
-
-                - Se superpone el apunte sobre la red semántica.
+                ![Apunte](./img/grafo8.svg)<!-- .element: class="fragment" data-fragment-index="4" -->
 
 
                 </script>
@@ -406,9 +407,9 @@
                 <script type="text/template">
                 ### inferencia por equiparación
 
-               equiparación
+                cotejo<!-- .element: class="fragment" data-fragment-index="1" -->
 
-                - Los nodos variables se ligan a los constantes hasta encontrar una equiparación perfecta
+                - Se superpone el apunte sobre la red semántica.<!-- .element: class="fragment" data-fragment-index="2" -->
 
 
                 </script>
@@ -418,9 +419,21 @@
                 <script type="text/template">
                 ### inferencia por equiparación
 
-                respuesta
+                equiparación<!-- .element: class="fragment" data-fragment-index="1" -->
 
-                - La respuesta es el fragmento de red semántica con los valores con los que se rellenan los nodos variables.
+                - Los nodos variables se ligan a los constantes hasta encontrar una equiparación perfecta<!-- .element: class="fragment" data-fragment-index="2" -->
+
+
+                </script>
+                </section>
+
+                <section data-markdown>
+                <script type="text/template">
+                ### inferencia por equiparación
+
+                respuesta<!-- .element: class="fragment" data-fragment-index="1" -->
+
+                - La respuesta es el fragmento de red semántica con los valores con los que se rellenan los nodos variables.<!-- .element: class="fragment" data-fragment-index="2" -->
 
 
                 </script>
@@ -434,10 +447,10 @@
             <script type="text/template">
             ### inferencia por herencia de propiedades
 
-            >Permite que nodos específicos de una red accedan a propiedades definidas en otros nodos utilizando los arcos *instancia* y *subclase-de*
+            >Permite que nodos específicos de una red accedan a propiedades definidas en otros nodos utilizando los arcos <!-- .element: class="fragment" data-fragment-index="1" -->*instancia*<!-- .element: class="fragment" data-fragment-index="1" --> y <!-- .element: class="fragment" data-fragment-index="1" -->*subclase-de*<!-- .element: class="fragment" data-fragment-index="1" -->
 
-            - Favorece la compartición de propiedades, evitando la repetición de propiedades en la base de conocimiento.
-            - Se utiliza en sistemas que razonan dirigidos por la meta o por los datos.
+            - Favorece la compartición de propiedades, evitando la repetición de propiedades en la base de conocimiento.<!-- .element: class="fragment" data-fragment-index="2" -->
+            - Se utiliza en sistemas que razonan dirigidos por la meta o por los datos.<!-- .element: class="fragment" data-fragment-index="3" -->
 
             </script>
             </section>
@@ -455,9 +468,9 @@
             <script type="text/template">
             ### inferencia por herencia de propiedades
 
-            Funciona muy bien con propiedades que presentan excepciones en sus valores: se hereda el valor de la propiedad del nodo más cercano al de partida.
+            Funciona muy bien con propiedades que presentan excepciones en sus valores: se hereda el valor de la propiedad del nodo más cercano al de partida.<!-- .element: class="fragment" data-fragment-index="1" -->
 
-            ![Excepciones en herencia](./img/grafo10.svg)
+            ![Excepciones en herencia](./img/grafo10.svg)<!-- .element: class="fragment" data-fragment-index="2" -->
 
 
             </script>
@@ -467,12 +480,12 @@
             <script type="text/template">
             ### inferencia por herencia de propiedades
 
-            Origina problemas si se han formalizado mal los conocimientos:
+            Origina problemas si se han formalizado mal los conocimientos:<!-- .element: class="fragment" data-fragment-index="1" -->
 
-            - No se distinguen nodos instancias de nodos concepto.
-            - La etiqueta que da nombre al nodo o al arco tiene una semántica diferente al conocimiento que se quiere representar.
-            - El arco está en sentido contrario.
-            - No se han representado situaciones o acciones utiliznado nodos situación.
+            - No se distinguen nodos instancias de nodos concepto.<!-- .element: class="fragment" data-fragment-index="2" -->
+            - La etiqueta que da nombre al nodo o al arco tiene una semántica diferente al conocimiento que se quiere representar.<!-- .element: class="fragment" data-fragment-index="3" -->
+            - El arco está en sentido contrario.<!-- .element: class="fragment" data-fragment-index="4" -->
+            - No se han representado situaciones o acciones utiliznado nodos situación.<!-- .element: class="fragment" data-fragment-index="5" -->
 
 
             </script>
@@ -488,6 +501,141 @@
             </script>
             </section>
             </section>
+
+                <section>
+                <section data-markdown>
+                <script type="text/template">
+                ### referencias
+                - [Inteligencia Artificial. Técnicas, métodos y operaciones (José T. Palma Méndez y Roque Marín Morales)](https://www.amazon.es/INTELIGENCIA-ARTIFICIAL-TECNICAS-METODOS-APLICACIONES/dp/8448156188)
+
+                </script>
+                </section>
+
+
+                </section>
+
+                <section>
+                <section data-markdown>
+                <script type="text/template">
+                ### graphviz
+                software de visualización de datos open source
+
+                - formato `dot`: para grafos dirigidos
+                - [descarga](https://www.graphviz.org/download/)
+                - [descarga Windows](https://graphviz.gitlab.io/_pages/Download/Download_windows.html)
+                - ruta Windows: `C:\Program Files (x86)\Graphviz2.38\bin\dot.exe`<!-- .element: style="font-size: 20px;"  -->
+
+                        dot -Tsvg graph.dot -o graph.svg
+
+                </script>
+                </section>
+                <section data-markdown>
+                <script type="text/template">
+                ### graphviz
+                        digraph ejemplo {
+                            node  [style="rounded,filled,bold", shape=box, fontname="Nimbus", color="lightgray"];
+                            edge  [fontname="Nimbus" weight=2, fontsize=12]
+                            A -> B [ label = "profesión" ];
+                            A [label="pepe"];
+                            B [label="informático"];
+                        }
+
+                </script>
+                </section>
+
+                </section>
+
+                <section>
+                <section data-markdown>
+                <script type="text/template">
+                ### referencias
+                - [Inteligencia Artificial. Técnicas, métodos y operaciones (José T. Palma Méndez y Roque Marín Morales)](https://www.amazon.es/INTELIGENCIA-ARTIFICIAL-TECNICAS-METODOS-APLICACIONES/dp/8448156188)
+
+                </script>
+                </section>
+
+
+                </section>
+
+                <section>
+                <section data-markdown>
+                <script type="text/template">
+                ### ejercicio 1
+                - las personas son mamíferos
+                - una persona tiene nariz
+                - Pedro es una persona
+                - Pedro estudia ciencia de datos
+
+                </script>
+                </section>
+                <section data-markdown>
+                <script type="text/template">
+                ### ejercicio 2
+
+                - Juan le dio un libro a María
+
+                </script>
+                </section>
+
+                <section data-markdown>
+                <script type="text/template">
+                <!-- .slide: style="font-size:30px" -->
+                ### ejercicio 3
+
+                - Una persona tiene dos brazos y dos piernas.
+                - Las personas pueden ser hombres y mujeres.
+                - Un jugador de baloncesto es un hombre.
+                - Michael Jordan es un jugador de baloncesto y juega de escolta.
+                - Shaquille O'Neil es un jugador de baloncesto y juega de pivot.
+                - La media de puntos de un escolta es 20.
+                - La media de puntos de Michael Jordan es 20.
+                - La media de puntos de un pivot es 20.
+                - El peso de un jugador de baloncesto es 120 kg.
+                - Michael Jordan pertenece al equipo de los Bulls.
+                - Shaquille O'Neil pertenece al equipo de los Lakers.
+                </script>
+                </section>
+
+                <section data-markdown>
+                <script type="text/template">
+                ### ejercicio 4
+
+                - La presión sanguínea de una arteria varía entre 40 mmHg y 80 mmHg
+
+                </script>
+                </section>
+
+                <section data-markdown>
+                <script type="text/template">
+                ### ejercicio 5
+
+                >El perro es un animal mamífero y como tal su sangre es caliente y su piel está recubierta de pelo. Tres características importantes de cualquier perro son que una de sus partes es el rabo, su sonido es el ladrido y sus hijos son los cachorros. Pipo es un perro. Un perro famoso es Lassie, que es un pastor alemán y además actor de televisión.
+
+                </script>
+                </section>
+
+                ### ejercicio 6
+
+                >Miguel impartió una clase de redes semánticas a sus alumnos en el IFCA.
+
+                    </script>
+                    </section>
+
+                </section>
+                <section>
+
+                <div>
+
+                <p style="font-size:20px; text-align:center; margin-top: 1em"><span style="font-weight: bold;"><a href="https://github.com/masterdatascienceifca/icane-panorama">Acceso al repositorio con la presentación</a></span></p>
+                <p style="font-size:20px; text-align:center; margin-top: 1em"><span style="font-weight: bold;">URL de la presentación: <a href="https://masterdatascienceifca.github.io/icane-panorama/">https://masterdatascienceifca.github.io/icane-panorama/</a></span></p>
+
+
+                <p style="font-size:20px; text-align:center; margin-top: 1em"><span style="font-weight: bold;"><a href="https://twitter.com/predicador37">Miguel Expósito Martín</a></span></p>
+                <p style="font-size:20px; text-align:center; margin-top: 1em"><span style="font-weight: bold;"><a href="mailto:miguel.exposito@gmail.com">miguel.exposito@gmail.com</a></span></p>
+
+                </div>
+
+                </section>
 
 				</div>
 

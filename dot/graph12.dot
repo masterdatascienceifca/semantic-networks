@@ -1,0 +1,27 @@
+digraph ejemplo {
+node  [style="rounded,filled,bold", shape=box, fontname="Nimbus", color="lightgray"];
+edge  [fontname="Nimbus" weight=2, fontsize=12]
+
+subgraph cluster_1 {
+A -> B [ label = "profesión" ];
+A -> C [ label = "edad"];
+C -> D [ label = "valor"];
+A -> E [ label = "instancia"];
+E -> F [ label = "subclase-de"];
+F -> G [ label = "tiene"];
+}
+
+subgraph cluster_2 {
+A -> H [ label = "vio"];
+}
+
+A [label="pepe"];
+B [label="informático"];
+C [label="edad-de-pepe"];
+D [label="37"];
+E [label="hombre"];
+F [label="persona"];
+G [label="cabeza"];
+H [label="museo"];
+
+}
