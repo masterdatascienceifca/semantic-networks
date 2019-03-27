@@ -68,7 +68,7 @@
                 <section data-id="1" data-markdown>
                     <script type="text/template">
                         ### Redes semánticas
-                        - Introducción<!-- .element: class="fragment" data-fragment-index="1" -->
+                        - Introducción a la IA y a las redes semánticas<!-- .element: class="fragment" data-fragment-index="1" -->
                         - Definición<!-- .element: class="fragment" data-fragment-index="2" -->
                         - Representación de conocimiento<!-- .element: class="fragment" data-fragment-index="3" -->
                         - Predicados n-arios<!-- .element: class="fragment" data-fragment-index="4" -->
@@ -80,6 +80,120 @@
 
                     </script>
                 </section>
+                <section>
+
+					<section data-id="1" data-markdown>
+						<script type="text/template">
+							## introducción a la IA
+						</script>
+                    </section>
+              
+                <section data-id="1" data-markdown>
+                    <script type="text/template">
+                        ## objetivos de la IA
+
+                        - modelar
+                        - formalizar
+                        - programar
+                        - implementar
+
+                        máquinas soporte capaces de interactuar de forma no trivial con el medio.
+                    </script>
+                </section>
+                <section data-id="1" data-markdown>
+                    <script type="text/template">
+                    ¿diferencia con la computación convencional?
+
+                    >todo lo que sepamos definir de forma clara, completa, precisa e inequívoca es computable. (Leibniz)
+                    </script>
+                </section>
+                <section data-id="1" data-markdown>
+                    <script type="text/template">
+                    >los problemas propios de la IA son aquellos para los que, en la actualizad, sólo se dispone de descripciones poco claras, incompletas, imprecisas y con alto grado de dudas y errores potenciales, debidos a su complejidad.
+                    
+                    ej: percepción, razonamiento creativo, lenguaje natural, aprendizaje...
+                </script> 
+                </section>
+                <section data-id="1" data-markdown>
+                    <script type="text/template">
+                    ## la gran hipótesis
+
+                    en un número corto de años (ahora ya 50), iba a ser posible sintetizar los procesos cognitivos y conseguir "inteligencia general en máquinas"
+
+                    </script>
+                </section>
+                <section data-id="1" data-markdown>
+                    <script type="text/template">
+                    ![R2D2](./img/ia/r2d2_c3po.jpg)
+                    </script>
+                </section>
+                <section data-id="1" data-markdown>
+                    <script type="text/template">
+                                ![HAL](./img/ia/hal.jpg)
+                            </script>
+                </section>
+                            <section data-id="1" data-markdown>
+                                <script type="text/template">
+                            ![JARVIS](./img/ia/jarvis.jpg)<!-- .element height="50%" width="50%" -->
+                        </script>
+                    </section>
+                    <section data-id="1" data-markdown>
+                        <script type="text/template">
+                    ![Ultron](./img/ia/ultron.jpg)
+                </script>
+                    </section>
+                    <section data-id="1" data-markdown>
+                        <script type="text/template">
+                    ![Ancillary Justice](./img/ia/ancillary_justice.jpg)
+                </script>
+                    </section>
+                    <section data-id="1" data-markdown>
+                        <script type="text/template">
+                        ## la gran hipótesis
+    
+                        quizá fue excesivo, ya que se ignoraron:
+
+                        - el carácter general y precientífico del término (¿qué es inteligencia?)
+                        - las diferencias entre el "conocer humano" y el conocimiento que hemos sido capaces de hacer residir en máquinas
+                        </script>
+                    </section>
+                <section data-id="1" data-markdown>
+                    <script type="text/template">
+                    ## visiones de la IA
+
+                    - IA como ciencia: busca una teoría computable del conocimiento humano.
+                    - IA como ingeniería: presenta objetivos más claros y alcanzables (ej: la ingeniería del conocimiento)
+
+                    </script>
+                </section>
+                <section data-id="1" data-markdown>
+                    <script type="text/template">
+                    ## paradigma simbólico
+                    considera que el conocimiento puede representarse usando descripciones declarativas en lenguaje natural, formadas por hechos y reglas de inferencia.
+                    </script>
+                </section>
+                <section data-id="1" data-markdown>
+                    <script type="text/template">
+                    ## paradigma situado
+                    enfatiza el hecho de que toda percepción y toda acción están estructuralmente acopladas a través de sensores y efectores concretos a un medio externo e interno también concretos.
+
+                    no hay proceso inferencial sino respuestas inmediatas desde esquemas precalculados.
+                </script>
+                </section>
+                <section data-id="1" data-markdown>
+                    <script type="text/template">
+                    ## paradigma conexionista
+                    el problema de representación del conocimiento se realiza mediante el uso de líneas numéricas etiquetadas para la entrada y salida de una red neuronal, y el problema de la inferencia se resuelve mediante un clasificador numérico de naturaleza paramétrica en el que el valor de dichos parámetros se ajusta mediante un algoritmo de aprendizaje supervisado o no supervisado.
+                </script>
+                </section>
+                <section data-id="1" data-markdown>
+                    <script type="text/template">
+                    ## paradigma híbrido
+                  la mayor parte de los problemas que resuelve la IA son de naturaleza híbrida. 
+                </script>
+                </section>
+            </section>
+
 				<section>
 
 					<section data-id="1" data-markdown>
@@ -216,7 +330,7 @@
                 <script type="text/template">
                 #### arcos estructurales
 
-                - <!-- .element: class="fragment" data-fragment-index="1" -->**generalización**<!-- .element: class="fragment" data-fragment-index="1" -->: relación de una clase con otra más general, formando una red de nodos por especialización de conceptos.<!-- .element: class="fragment" data-fragment-index="1" -->
+                - <!-- .element: class="fragment" data-fragment-index="1" -->**generalización** (*is_a, subclase_de*)<!-- .element: class="fragment" data-fragment-index="1" -->: relación de una clase con otra más general, formando una red de nodos por especialización de conceptos.<!-- .element: class="fragment" data-fragment-index="1" -->
 
                 ![Generalización](./img/grafo3.svg)<!-- .element: class="fragment" data-fragment-index="2" -->
 
@@ -228,7 +342,7 @@
                 <script type="text/template">
                 #### arcos estructurales
 
-                - <!-- .element: class="fragment" data-fragment-index="1" -->**instancia**<!-- .element: class="fragment" data-fragment-index="1" -->: liga un objeto concreto con su tipo genérico.<!-- .element: class="fragment" data-fragment-index="1" -->
+                - <!-- .element: class="fragment" data-fragment-index="1" -->**instancia** (*instance_of*)<!-- .element: class="fragment" data-fragment-index="1" -->: liga un objeto concreto con su tipo genérico.<!-- .element: class="fragment" data-fragment-index="1" -->
 
                 ![Instancia](./img/grafo4.svg)<!-- .element: class="fragment" data-fragment-index="2" -->
 
@@ -239,15 +353,23 @@
                 <section data-markdown>
                 <script type="text/template">
                 #### arcos estructurales
-                - <!-- .element: class="fragment" data-fragment-index="1" -->**agregación**<!-- .element: class="fragment" data-fragment-index="1" -->: liga un objeto a sus componentes.<!-- .element: class="fragment" data-fragment-index="1" -->
+                - <!-- .element: class="fragment" data-fragment-index="1" -->**agregación** (*has_a*)<!-- .element: class="fragment" data-fragment-index="1" -->: liga un objeto a sus componentes.<!-- .element: class="fragment" data-fragment-index="1" -->
 
                 ![Agregación](./img/grafo5.svg)<!-- .element: class="fragment" data-fragment-index="2" -->
                 </script>
 
                 </section>
-
-
-
+                <section data-markdown>
+                    <script type="text/template">
+                    ### ejercicio 1
+                    - las personas son mamíferos
+                    - una persona tiene nariz
+                    - Pedro es una persona
+                    - Pedro estudia ciencia de datos
+                    
+                    ¿cómo se incluiría que Pedro es un varón?
+                    </script>
+                    </section>
                 </section>
 
             <section>
@@ -365,6 +487,27 @@
             </script>
 
             </section>
+            <section data-markdown>
+                <script type="text/template">
+                ### ejercicio 2
+
+                - Juan le dio un libro a María
+
+                </script>
+             </section>
+             <section data-markdown>
+                <script type="text/template">
+                ### ejercicio 3
+                - La presión sanguínea de la arteria aorta varía entre 40 mmHg y 80 mmHg
+
+                </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ### ejercicio 4
+                    >Miguel impartió la asignatura de redes semánticas a sus alumnos en la Facultad de Físicas el jueves.
+                    </script>
+                    </section>
 
             </section>
             <section>
@@ -601,53 +744,11 @@
 
 
                 <section>
-                <section data-markdown>
-                <script type="text/template">
-                ### ejercicio 1
-                - las personas son mamíferos
-                - una persona tiene nariz
-                - Pedro es una persona
-                - Pedro estudia ciencia de datos
+               
 
-                </script>
-                </section>
-                <section data-markdown>
-                <script type="text/template">
-                ### solución ejercicio 1
-                ![Solución ejercicio 1](./img/ex1.svg)
+          
 
-                </script>
-                </section>
-                <section data-markdown>
-                <script type="text/template">
-                ### ejercicio 2
-
-                - Juan le dio un libro a María
-
-                </script>
-                </section>
-                <section data-markdown>
-                <script type="text/template">
-                ### solución ejercicio 2
-                ![Solución ejercicio 2](./img/ex2.svg)
-
-                </script>
-                </section>
-
-                <section data-markdown>
-                <script type="text/template">
-                ### ejercicio 3
-                - La presión sanguínea de una arteria varía entre 40 mmHg y 80 mmHg
-
-                </script>
-                </section>
-
-                <section data-markdown>
-                <script type="text/template">
-                ### ejercicio 4
-                >Miguel impartió la asignatura de redes semánticas a sus alumnos en el IFCA el lunes.
-                </script>
-                </section>
+              
 
                 <section data-markdown>
                 <script type="text/template">
