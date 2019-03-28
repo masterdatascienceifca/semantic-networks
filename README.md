@@ -7,7 +7,7 @@ Presentación teórico-práctica sobre redes semánticas.
 - Abrir un navegador Chrome
 - Introducir la URL de la presentación y añadirle el parámetro `print-pdf`. Ejemplo:
 
-     https://masterdatascienceifca.github.io/semantic-networks/index.html?print-pdf
+     https://masterdatascience-UIMP-UC.github.io/semantic-networks/index.html?print-pdf
 
 - Seleccionar la opción `imprimir` de Chrome
 - Seleccionar el Destino `Guardar como PDF`
