@@ -102,7 +102,7 @@
                 </section>
                 <section data-id="1" data-markdown>
                     <script type="text/template">
-                    ¿diferencia con la computación convencional?<!-- .element: class="fragment" data-fragment-index="1" -->
+                    ¿diferencia con la computación convencional?
 
                     ><!-- .element: class="fragment" data-fragment-index="2" -->todo lo que sepamos definir de forma clara, completa, precisa e inequívoca es computable. (Leibniz)<!-- .element: class="fragment" data-fragment-index="2" -->
                     </script>
@@ -116,9 +116,9 @@
                 </section>
                 <section data-id="1" data-markdown>
                     <script type="text/template">
-                    ## la gran hipótesis
+                    ## La Gran Hipótesis
 
-                    en un número corto de años (ahora ya 50), iba a ser posible sintetizar los procesos cognitivos y conseguir "inteligencia general en máquinas"
+                    en un número corto de años (ahora ya más de 60), iba a ser posible sintetizar los procesos cognitivos y conseguir "inteligencia general en máquinas"
 
                     </script>
                 </section>
@@ -137,21 +137,11 @@
                 ![Roy](./img/ia/roy.jpg)
             </script>
                 </section>
-                            <section data-id="1" data-markdown>
-                                <script type="text/template">
-                            ![JARVIS](./img/ia/jarvis.jpg)<!-- .element height="50%" width="50%" -->
-                        </script>
-                    </section>
                     <section data-id="1" data-markdown>
                         <script type="text/template">
-                    ![Ancillary Justice](./img/ia/ancillary_justice.jpg)
-                </script>
-                    </section>
-                    <section data-id="1" data-markdown>
-                        <script type="text/template">
-                        ## la gran hipótesis
+                        ## ¿La Gran Hipótesis?
     
-                        quizá fue excesivo, ya que se ignoraron:
+                        Quizá fue excesivo, ya que se ignoraron:
 
                         - el carácter general y precientífico del término (¿qué es inteligencia?)
                         - las diferencias entre el "conocer humano" y el conocimiento que hemos sido capaces de hacer residir en máquinas
@@ -312,7 +302,7 @@
                 <script type="text/template">
                 #### arcos descriptivos
 
-                ><!-- .element: class="fragment" data-fragment-index="1" -->describen entidades y conceptos, bien relacionando entidades independientes ya existentes bien definiendo una nueva entidad.<!-- .element: class="fragment" data-fragment-index="1" -->
+                ><!-- .element: class="fragment" data-fragment-index="1" -->describen entidades y conceptos, bien relacionando entidades independientes ya existentes, bien definiendo una nueva entidad.<!-- .element: class="fragment" data-fragment-index="1" -->
 
                 ![Arcos descriptivos](./img/grafo2.svg)<!-- .element: class="fragment" data-fragment-index="2" -->
 
@@ -453,7 +443,7 @@
 
             <section data-markdown>
             <script type="text/template">
-            ### casos
+            ### casos (II)
 
             - Origen: lugar del que procede el evento.<!-- .element: class="fragment" data-fragment-index="1" -->
             - Propósito: motivo por el que se ejecuta la acción.<!-- .element: class="fragment" data-fragment-index="2" -->
@@ -523,7 +513,7 @@
             <script type="text/template">
             ### representación del conocimiento disjunto
 
-            - arcos "disjunto"<!-- .element: class="fragment" data-fragment-index="1" -->
+            - arcos tipo "disjunto"<!-- .element: class="fragment" data-fragment-index="1" -->
             - <!-- .element: class="fragment" data-fragment-index="2" -->[Hendrix](https://www.ijcai.org/Proceedings/75/Papers/016.pdf)<!-- .element: class="fragment" data-fragment-index="2" -->: Subconjunto, Subconjunto disjunto, Elemento, Elemento disjunto<!-- .element: class="fragment" data-fragment-index="2" -->
 
             </script>
@@ -559,9 +549,7 @@
 
                 <section data-markdown>
                 <script type="text/template">
-                ### inferencia por equiparación
-
-                pasos
+                ### Pasos
 
                 1. Construcción
                 2. Cotejo
@@ -574,15 +562,13 @@
 
                 <section data-markdown>
                 <script type="text/template">
-                ### inferencia por equiparación
+                ### Construcción y cotejo
 
-                construcción y cotejo<!-- .element: class="fragment" data-fragment-index="1" -->
+                - Se construye un apunte que responda a la pregunta.
+                - Estará formado por nodos constantes, nodos variables y arcos etiquetados.
+                - Se superpone el apunte sobre la red semántica.
 
-                - Se construye un apunte que responda a la pregunta.<!-- .element: class="fragment" data-fragment-index="2" -->
-                - Estará formado por nodos constantes, nodos variables y arcos etiquetados.<!-- .element: class="fragment" data-fragment-index="3" -->
-                - Se superpone el apunte sobre la red semántica.<!-- .element: class="fragment" data-fragment-index="4" -->
-
-                ![Apunte](./img/grafo8.svg)<!-- .element: class="fragment" data-fragment-index="5" --><!-- .element height="40%" width="40%" -->
+                ![Apunte](./img/grafo8.svg)<!-- .element: class="fragment" data-fragment-index="1" --><!-- .element height="40%" width="40%" -->
 
 
                 </script>
@@ -590,24 +576,18 @@
 
                 <section data-markdown>
                 <script type="text/template">
-                ### inferencia por equiparación
+                ### Equiparación
 
-                equiparación<!-- .element: class="fragment" data-fragment-index="1" -->
-
-                - Los nodos variables se ligan a los constantes hasta encontrar una equiparación perfecta<!-- .element: class="fragment" data-fragment-index="2" -->
-
+                - Los nodos variables se ligan a los constantes hasta encontrar una equiparación perfecta
 
                 </script>
                 </section>
 
                 <section data-markdown>
                 <script type="text/template">
-                ### inferencia por equiparación
+                ### Respuesta
 
-                respuesta<!-- .element: class="fragment" data-fragment-index="1" -->
-
-                - La respuesta es el fragmento de red semántica con los valores con los que se rellenan los nodos variables.<!-- .element: class="fragment" data-fragment-index="2" -->
-
+                - La respuesta es el fragmento de red semántica con los valores con los que se rellenan los nodos variables.
 
                 </script>
                 </section>
@@ -630,7 +610,7 @@
 
             <section data-markdown>
             <script type="text/template">
-            ### inferencia por herencia de propiedades
+            ### inferencia por herencia de propiedades (II)
 
             ![Herencia](./img/grafo9.svg)
 
@@ -641,7 +621,7 @@
 
             <section data-markdown>
             <script type="text/template">
-            ### inferencia por herencia de propiedades
+            ### inferencia por herencia de propiedades (III)
 
             Funciona muy bien con propiedades que presentan excepciones en sus valores: se hereda el valor de la propiedad del nodo más cercano al de partida.<!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -653,14 +633,14 @@
 
             <section data-markdown>
             <script type="text/template">
-            ### inferencia por herencia de propiedades
+            ### inferencia por herencia de propiedades (IV)
 
             Origina problemas si se han formalizado mal los conocimientos:<!-- .element: class="fragment" data-fragment-index="1" -->
 
-            - No se distinguen nodos instancias de nodos concepto.<!-- .element: class="fragment" data-fragment-index="2" -->
-            - La etiqueta que da nombre al nodo o al arco tiene una semántica diferente al conocimiento que se quiere representar.<!-- .element: class="fragment" data-fragment-index="3" -->
-            - El arco está en sentido contrario.<!-- .element: class="fragment" data-fragment-index="4" -->
-            - No se han representado situaciones o acciones utilizando nodos situación.<!-- .element: class="fragment" data-fragment-index="5" -->
+            - Si no se han distinguido nodos instancias de nodos concepto.<!-- .element: class="fragment" data-fragment-index="2" -->
+            - Si la etiqueta que da nombre al nodo o al arco tiene una semántica diferente al conocimiento que se quiere representar.<!-- .element: class="fragment" data-fragment-index="3" -->
+            - Si el arco está en sentido contrario.<!-- .element: class="fragment" data-fragment-index="4" -->
+            - Si no se han representado situaciones o acciones utilizando nodos situación.<!-- .element: class="fragment" data-fragment-index="5" -->
 
 
             </script>
@@ -668,9 +648,9 @@
 
             <section data-markdown>
             <script type="text/template">
-            ### inferencia por herencia de propiedades
+            ### inferencia por herencia de propiedades (V)
 
-            ![Problemas en herencia](./img/grafo11.svg)
+            ![Problemas en herencia](./img/grafo11.svg)<!-- .element: height="75%" width="75%"-->
 
 
             </script>
