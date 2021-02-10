@@ -68,15 +68,15 @@
                 <section data-id="1" data-markdown>
                     <script type="text/template">
                         ### Redes semánticas
-                        - Introducción a la IA y a las redes semánticas<!-- .element: class="fragment" data-fragment-index="1" -->
-                        - Definición<!-- .element: class="fragment" data-fragment-index="2" -->
-                        - Representación de conocimiento<!-- .element: class="fragment" data-fragment-index="3" -->
-                        - Predicados n-arios<!-- .element: class="fragment" data-fragment-index="4" -->
-                        - Acciones<!-- .element: class="fragment" data-fragment-index="5" -->
-                        - Conocimiento disjunto<!-- .element: class="fragment" data-fragment-index="6" -->
-                        - Inferencia<!-- .element: class="fragment" data-fragment-index="7" -->
-                        - Graphviz<!-- .element: class="fragment" data-fragment-index="8" -->
-                        - Ejercicios<!-- .element: class="fragment" data-fragment-index="9" -->
+                        - Introducción a la IA y a las redes semánticas
+                        - Definición
+                        - Representación de conocimiento
+                        - Predicados n-arios
+                        - Acciones
+                        - Conocimiento disjunto
+                        - Inferencia
+                        - Graphviz
+                        - Ejercicios
 
                     </script>
                 </section>
@@ -302,21 +302,9 @@
                 <script type="text/template">
                 #### arcos descriptivos
 
-                ><!-- .element: class="fragment" data-fragment-index="1" -->describen entidades y conceptos, bien relacionando entidades independientes ya existentes, bien definiendo una nueva entidad.<!-- .element: class="fragment" data-fragment-index="1" -->
+                > describen entidades y conceptos, bien relacionando entidades independientes ya existentes, bien definiendo una nueva entidad.
 
-                ![Arcos descriptivos](./img/grafo2.svg)<!-- .element: class="fragment" data-fragment-index="2" -->
-
-                </script>
-
-                </section>
-
-                <section data-markdown>
-                <script type="text/template">
-                #### arcos estructurales
-
-                ><!-- .element: class="fragment" data-fragment-index="1" --> enlazan las entidades o conceptos formando la arquitectura o estructura de la red.<!-- .element: class="fragment" data-fragment-index="1" -->
-
-                ejemplos: subclase-de, instancia, parte-de<!-- .element: class="fragment" data-fragment-index="2" -->
+                ![Arcos descriptivos](./img/grafo2.svg)<!-- .element: class="fragment" data-fragment-index="1" -->
 
                 </script>
 
@@ -326,9 +314,21 @@
                 <script type="text/template">
                 #### arcos estructurales
 
-                - <!-- .element: class="fragment" data-fragment-index="1" -->**generalización** (*is_a, subclase_de*)<!-- .element: class="fragment" data-fragment-index="1" -->: relación de una clase con otra más general, formando una red de nodos por especialización de conceptos.<!-- .element: class="fragment" data-fragment-index="1" -->
+                > enlazan las entidades o conceptos formando la arquitectura o estructura de la red.
 
-                ![Generalización](./img/grafo3.svg)<!-- .element: class="fragment" data-fragment-index="2" -->
+                ejemplos: subclase-de, instancia, parte-de<!-- .element: class="fragment" data-fragment-index="1" -->
+
+                </script>
+
+                </section>
+
+                <section data-markdown>
+                <script type="text/template">
+                #### arcos estructurales
+
+                - **generalización** (*is_a, subclase_de*): relación de una clase con otra más general, formando una red de nodos por especialización de conceptos.
+
+                ![Generalización](./img/grafo3.svg)<!-- .element: class="fragment" data-fragment-index="1" -->
 
                 </script>
 
@@ -338,9 +338,9 @@
                 <script type="text/template">
                 #### arcos estructurales
 
-                - <!-- .element: class="fragment" data-fragment-index="1" -->**instancia** (*instance_of*)<!-- .element: class="fragment" data-fragment-index="1" -->: liga un objeto concreto con su tipo genérico.<!-- .element: class="fragment" data-fragment-index="1" -->
+                - **instancia** (*instance_of*): liga un objeto concreto con su tipo genérico.
 
-                ![Instancia](./img/grafo4.svg)<!-- .element: class="fragment" data-fragment-index="2" -->
+                ![Instancia](./img/grafo4.svg)<!-- .element: class="fragment" data-fragment-index="1" -->
 
                 </script>
 
@@ -349,9 +349,9 @@
                 <section data-markdown>
                 <script type="text/template">
                 #### arcos estructurales
-                - <!-- .element: class="fragment" data-fragment-index="1" -->**agregación** (*has_a*)<!-- .element: class="fragment" data-fragment-index="1" -->: liga un objeto a sus componentes.<!-- .element: class="fragment" data-fragment-index="1" -->
+                - **agregación** (*has_a*): liga un objeto a sus componentes.
 
-                ![Agregación](./img/grafo5.svg)<!-- .element: class="fragment" data-fragment-index="2" -->
+                ![Agregación](./img/grafo5.svg)<!-- .element: class="fragment" data-fragment-index="1" -->
                 </script>
 
                 </section>
@@ -375,7 +375,7 @@
 
             por ejemplo, una relación de compraventa de un reloj entre Pepe y Luis<!-- .element: class="fragment" data-fragment-index="1" -->
 
-            *Pepe compra a Luis un reloj por 45 €.*<!-- .element: class="fragment" data-fragment-index="2" -->
+            *Pepe compra a Luis un reloj por 45 €.*<!-- .element: class="fragment" data-fragment-index="1" -->
             </script>
 
             </section>
@@ -431,11 +431,11 @@
             <script type="text/template">
             ### casos
 
-            - Agente: persona que realiza el evento.<!-- .element: class="fragment" data-fragment-index="1" -->
-            - Contra-agente: fuerza o resistencia contra la que se ejecuta la acción.<!-- .element: class="fragment" data-fragment-index="2" -->
-            - Objeto: entidad movida, cambiada, cuya posición o existencia se considera.<!-- .element: class="fragment" data-fragment-index="3" -->
-            - Resultado: entidad consecuencia de la acción.<!-- .element: class="fragment" data-fragment-index="4" -->
-            - Instrumento: estímulo o causa física de un evento.<!-- .element: class="fragment" data-fragment-index="5" -->
+            - Agente: persona que realiza el evento.
+            - Contra-agente: fuerza o resistencia contra la que se ejecuta la acción.
+            - Objeto: entidad movida, cambiada, cuya posición o existencia se considera.
+            - Resultado: entidad consecuencia de la acción.
+            - Instrumento: estímulo o causa física de un evento.
 
             </script>
 
@@ -445,11 +445,11 @@
             <script type="text/template">
             ### casos (II)
 
-            - Origen: lugar del que procede el evento.<!-- .element: class="fragment" data-fragment-index="1" -->
-            - Propósito: motivo por el que se ejecuta la acción.<!-- .element: class="fragment" data-fragment-index="2" -->
-            - Lugar: sitio en el que se desarrolla la acción.<!-- .element: class="fragment" data-fragment-index="3" -->
-            - Tiempo: fecha o momento en el que tiene lugar la acción.<!-- .element: class="fragment" data-fragment-index="4" -->
-            - Sujeto: entidad que recibe, acepta o experimenta el efecto de la acción.<!-- .element: class="fragment" data-fragment-index="5" -->
+            - Origen: lugar del que procede el evento.
+            - Propósito: motivo por el que se ejecuta la acción.
+            - Lugar: sitio en el que se desarrolla la acción.
+            - Tiempo: fecha o momento en el que tiene lugar la acción.
+            - Sujeto: entidad que recibe, acepta o experimenta el efecto de la acción.
             </script>
 
             </section>
@@ -457,10 +457,10 @@
             <section data-markdown>
             <script type="text/template">
             ### modalidad
-            características que presenta el verbo:<!-- .element: class="fragment" data-fragment-index="1" -->
+            características que presenta el verbo:
 
-            - tiempo en el que se ha desarrollado la acción (pasado, presente, futuro).<!-- .element: class="fragment" data-fragment-index="2" -->
-            - voz: activa, pasiva.<!-- .element: class="fragment" data-fragment-index="3" -->
+            - tiempo en el que se ha desarrollado la acción (pasado, presente, futuro).
+            - voz: activa, pasiva.
             </script>
             </section>
             <section data-markdown>
@@ -468,8 +468,8 @@
             ### representación
             a través de <!-- .element: class="fragment" data-fragment-index="1" -->**nodos situación o suceso**<!-- .element: class="fragment" data-fragment-index="1" --> que tienen como atributos:<!-- .element: class="fragment" data-fragment-index="1" -->
 
-            - conjunto de casos<!-- .element: class="fragment" data-fragment-index="2" -->
-            - conjunto de modalidades<!-- .element: class="fragment" data-fragment-index="3" -->
+            - conjunto de casos<!-- .element: class="fragment" data-fragment-index="1" -->
+            - conjunto de modalidades<!-- .element: class="fragment" data-fragment-index="1" -->
             </script>
 
             </section>
@@ -478,9 +478,9 @@
             <script type="text/template">
             ### ejemplo
 
-            ><!-- .element: class="fragment" data-fragment-index="1" -->Luis sabe que Pepe vio El Prado en Madrid<!-- .element: class="fragment" data-fragment-index="1" -->
+            > Luis sabe que Pepe vio El Prado en Madrid
 
-            ![Ejemplo acciones](./img/grafo7.svg)<!-- .element: class="fragment" data-fragment-index="2" height="75%" width="75%"-->
+            ![Ejemplo acciones](./img/grafo7.svg)<!-- .element: class="fragment" data-fragment-index="1" height="75%" width="75%"-->
 
             </script>
 
@@ -637,7 +637,7 @@
 
             Origina problemas si se han formalizado mal los conocimientos:<!-- .element: class="fragment" data-fragment-index="1" -->
 
-            - Si no se han distinguido nodos instancias de nodos concepto.<!-- .element: class="fragment" data-fragment-index="2" -->
+            - Si no se han distinguido nodos instancia de nodos concepto.<!-- .element: class="fragment" data-fragment-index="2" -->
             - Si la etiqueta que da nombre al nodo o al arco tiene una semántica diferente al conocimiento que se quiere representar.<!-- .element: class="fragment" data-fragment-index="3" -->
             - Si el arco está en sentido contrario.<!-- .element: class="fragment" data-fragment-index="4" -->
             - Si no se han representado situaciones o acciones utilizando nodos situación.<!-- .element: class="fragment" data-fragment-index="5" -->
