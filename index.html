@@ -73,7 +73,6 @@
                         - Representación de conocimiento
                         - Predicados n-arios
                         - Acciones
-                        - Conocimiento disjunto
                         - Inferencia
                         - Graphviz
                         - Ejercicios
@@ -509,26 +508,15 @@
 
             </section>
             <section>
-            <section data-markdown>
-            <script type="text/template">
-            ### representación del conocimiento disjunto
-
-            - arcos tipo "disjunto"<!-- .element: class="fragment" data-fragment-index="1" -->
-            - <!-- .element: class="fragment" data-fragment-index="2" -->[Hendrix](https://www.ijcai.org/Proceedings/75/Papers/016.pdf)<!-- .element: class="fragment" data-fragment-index="2" -->: Subconjunto, Subconjunto disjunto, Elemento, Elemento disjunto<!-- .element: class="fragment" data-fragment-index="2" -->
-
-            </script>
-            </section>
-            </section>
-                <section>
                 <section data-markdown>
                 <script type="text/template">
                 ### inferencia de conocimiento
 
-                ><!-- .element: class="fragment" data-fragment-index="1" -->extracción de conocimiento nuevo a partir de hechos considerados como ciertos<!-- .element: class="fragment" data-fragment-index="1" -->
+                > extracción de conocimiento nuevo a partir de hechos considerados como ciertos
 
-                ejemplo:<!-- .element: class="fragment" data-fragment-index="2" -->
+                ejemplo:<!-- .element: class="fragment" data-fragment-index="1" -->
 
-                si Pipo es un perro y los perros son mamíferos, entonces Pipo es un mamífero<!-- .element: class="fragment" data-fragment-index="2" -->
+                si Pipo es un perro y los perros son mamíferos, entonces Pipo es un mamífero<!-- .element: class="fragment" data-fragment-index="1" -->
 
                 </script>
                 </section>
@@ -538,11 +526,11 @@
                 <script type="text/template">
                 ### inferencia por equiparación
 
-                ><!-- .element: class="fragment" data-fragment-index="1" -->Un fragmento de red, apunte o consulta se equipara con una red semántica si dicho apunte se puede asociar con un fragmento de dicha red.<!-- .element: class="fragment" data-fragment-index="1" -->
+                > Un fragmento de red, apunte o consulta se equipara con una red semántica si dicho apunte se puede asociar con un fragmento de dicha red.
 
-                ejemplo de consulta:<!-- .element: class="fragment" data-fragment-index="2" -->
+                ejemplo de consulta:<!-- .element: class="fragment" data-fragment-index="1" -->
 
-                *¿Existe algún varón que viera un museo en Madrid?*<!-- .element: class="fragment" data-fragment-index="2" -->
+                *¿Existe algún varón que viera un museo en Madrid?*<!-- .element: class="fragment" data-fragment-index="1" -->
 
                 </script>
                 </section>
@@ -600,10 +588,10 @@
             <script type="text/template">
             ### inferencia por herencia de propiedades
 
-            ><!-- .element: class="fragment" data-fragment-index="1" -->Permite que nodos específicos de una red accedan a propiedades definidas en otros nodos utilizando los arcos <!-- .element: class="fragment" data-fragment-index="1" -->*instancia*<!-- .element: class="fragment" data-fragment-index="1" --> y <!-- .element: class="fragment" data-fragment-index="1" -->*subclase-de*<!-- .element: class="fragment" data-fragment-index="1" -->
+            > Permite que nodos específicos de una red accedan a propiedades definidas en otros nodos utilizando los arcos *instancia* y *subclase-de*
 
-            - Favorece la compartición de propiedades, evitando la repetición de propiedades en la base de conocimiento.<!-- .element: class="fragment" data-fragment-index="2" -->
-            - Se utiliza en sistemas que razonan dirigidos por la meta o por los datos.<!-- .element: class="fragment" data-fragment-index="3" -->
+            - Favorece la compartición de propiedades, evitando la repetición de propiedades en la base de conocimiento.<!-- .element: class="fragment" data-fragment-index="1" -->
+            - Se utiliza en sistemas que razonan dirigidos por la meta o por los datos.<!-- .element: class="fragment" data-fragment-index="1" -->
 
             </script>
             </section>
@@ -623,9 +611,9 @@
             <script type="text/template">
             ### inferencia por herencia de propiedades (III)
 
-            Funciona muy bien con propiedades que presentan excepciones en sus valores: se hereda el valor de la propiedad del nodo más cercano al de partida.<!-- .element: class="fragment" data-fragment-index="1" -->
+            Funciona muy bien con propiedades que presentan excepciones en sus valores: se hereda el valor de la propiedad del nodo más cercano al de partida.
 
-            ![Excepciones en herencia](./img/grafo10.svg)<!-- .element: class="fragment" data-fragment-index="2" -->
+            ![Excepciones en herencia](./img/grafo10.svg)<!-- .element: class="fragment" data-fragment-index="1" -->
 
 
             </script>
@@ -635,12 +623,12 @@
             <script type="text/template">
             ### inferencia por herencia de propiedades (IV)
 
-            Origina problemas si se han formalizado mal los conocimientos:<!-- .element: class="fragment" data-fragment-index="1" -->
+            Origina problemas si se han formalizado mal los conocimientos:
 
-            - Si no se han distinguido nodos instancia de nodos concepto.<!-- .element: class="fragment" data-fragment-index="2" -->
-            - Si la etiqueta que da nombre al nodo o al arco tiene una semántica diferente al conocimiento que se quiere representar.<!-- .element: class="fragment" data-fragment-index="3" -->
-            - Si el arco está en sentido contrario.<!-- .element: class="fragment" data-fragment-index="4" -->
-            - Si no se han representado situaciones o acciones utilizando nodos situación.<!-- .element: class="fragment" data-fragment-index="5" -->
+            - Si no se han distinguido nodos instancia de nodos concepto.
+            - Si la etiqueta que da nombre al nodo o al arco tiene una semántica diferente al conocimiento que se quiere representar.
+            - Si el arco está en sentido contrario.
+            - Si no se han representado situaciones o acciones utilizando nodos situación.
 
 
             </script>
