@@ -1,24 +1,23 @@
 digraph ejercicio1 {
-node  [style="rounded,filled,bold", shape=box, fontname="Nimbus", color="lightgray"];
-edge  [fontname="Nimbus" weight=2, fontsize=12]
+    node  [style="rounded,filled,bold", shape=box, fontname="Nimbus", color="lightgray"];
+    edge  [fontname="Nimbus" weight=2, fontsize=12]
 
+    A -> C [ label = "instancia_de"];
+    C -> E [ label = "subclase_de"];
+    C -> D [ label = "tiene"];
+    F -> A [ label = "agente"];
+    F -> B [ label = "objeto"];
+    B -> I [ label = "instancia_de" ];
+    G -> H [ label = "subclase_de" ];
+    F -> G [ label = "instancia_de"];
 
-A -> C [ label = "instancia-de"];
-C -> E [ label = "subclase-de"];
-C -> D [ label = "tiene"];
-F -> A [ label = "agente"];
-F -> B [ label = "objeto"];
-B -> I [ label = "instancia-de" ];
-G -> H [ label = "subclase-de" ];
-F -> G [ label = "instancia-de"];
-
-A [label="Pedro"];
-B [label="Ciencia de datos"];
-C [label="Persona"];
-D [label="Nariz"];
-E [label="Mamífero"];
-F [label="Estudiar_1"];
-G [label="Suceso_Estudiar"];
-H [label="Suceso"];
-I [label="Asignatura"]
+    A [label="pedro"];
+    B [label="cienciaDatos"];
+    C [label="Persona"];
+    D [label="nariz"];
+    E [label="Mamífero"];
+    F [label="estudiar1"];
+    G [label="SucesoEstudiar"];
+    H [label="Suceso"];
+    I [label="Asignatura"]
 }

@@ -1,36 +1,36 @@
 digraph ejemplo {
-node  [style="rounded,filled,bold", shape=box, fontname="Nimbus", color="lightgray"];
-edge  [fontname="Nimbus" weight=2, fontsize=12]
+    node  [style="rounded,filled,bold", shape=box, fontname="Nimbus", color="lightgray"];
+    edge  [fontname="Nimbus" weight=2, fontsize=12]
 
-A -> B [ label = "instancia" ];
-B -> C [ label = "subclase-de"]
-A -> D [ label = "voz"];
-A -> E [ label = "tiempo"];
-A -> F [ label = "agente"];
+    A -> B [ label = "instancia_de" ];
+    B -> C [ label = "subclase_de"]
+    A -> D [ label = "voz_mod"];
+    A -> E [ label = "tiempo_mod"];
+    A -> F [ label = "agente"];
 
-H -> G [ label = "instancia"];
-G -> C [ label = "subclase-de"];
-H -> I [ label = "agente"];
-H -> J [ label = "objeto"];
-J -> K [ label = "instancia"];
-H -> L [ label = "lugar"];
-H -> M [ label = "tiempo"];
-H -> N [ label = "voz"];
-A -> H [ label = "objeto"];
+    H -> G [ label = "instancia_de"];
+    G -> C [ label = "subclase_de"];
+    H -> I [ label = "agente"];
+    H -> J [ label = "objeto"];
+    J -> K [ label = "instancia_de"];
+    H -> L [ label = "lugar"];
+    H -> M [ label = "tiempo_mod"];
+    H -> N [ label = "voz_mod"];
+    A -> H [ label = "objeto"];
 
-A [label="Saber_1"];
-B [label="Suceso_saber"];
-C [label="Suceso"];
-D [label="Activa"];
-E [label="Presente"];
-F [label="Luis"];
+    A [label="saber1"];
+    B [label="SucesoSaber"];
+    C [label="Suceso"];
+    D [label="activa"];
+    E [label="presente"];
+    F [label="luis"];
 
-G [label="Suceso_ver"];
-H [label="Ver_1"];
-I [label="Pepe"];
-J [label="El Prado"];
-K [label="Museo"];
-L [label="Madrid"];
-M [label="Pasado"];
-N [label="Activa"];
+    G [label="SucesoVer"];
+    H [label="ver1"];
+    I [label="pepe"];
+    J [label="elPrado"];
+    K [label="Museo"];
+    L [label="madrid"];
+    M [label="pasado"];
+    N [label="activa"];
 }

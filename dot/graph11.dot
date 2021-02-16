@@ -3,19 +3,19 @@ node  [style="rounded,filled,bold", shape=box, fontname="Nimbus", color="lightgr
 edge  [fontname="Nimbus" weight=2, fontsize=12]
 
 subgraph cluster_1 {
-g -> A [ label = "instancia-de" ];
-A -> B [ label = "subclase-de"];
+g -> A [ label = "instancia_de" ];
+A -> B [ label = "subclase_de"];
 B -> C [ label = "tiene"];
-A -> D [ label = "subclase-de"];
-D -> E [ label = "estudiado-por"];
+A -> D [ label = "subclase_de"];
+D -> E [ label = "estudiado_por"];
 label = "Problema"
 }
 
 subgraph cluster_2 {
-h -> F [ label = "instancia-de"];
-F -> G [ label = "subclase-de"];
+h -> F [ label = "instancia_de"];
+F -> G [ label = "subclase_de"];
 G -> H [ label = "tiene"];
-F -> I [ label = "subclase-de"];
+F -> I [ label = "subclase_de"];
 J -> I [ label = "estudian"];
 label = "Sin problema"
 }

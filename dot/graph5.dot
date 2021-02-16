@@ -1,19 +1,20 @@
 digraph ejemplo {
-node  [style="rounded,filled,bold", shape=box, fontname="Nimbus", color="lightgray"];
-edge  [fontname="Nimbus" weight=2, fontsize=12]
-A -> B [ label = "profesión" ];
-A -> C [ label = "edad"];
-C -> D [ label = "valor"];
-A -> E [ label = "instancia"];
-E -> F [ label = "subclase-de"];
-subgraph cluster_1 {
-F -> G [ label = "tiene"];
-}
-A [label="pepe"];
-B [label="informático"];
-C [label="edad-de-pepe"];
-D [label="37"];
-E [label="hombre"];
-F [label="persona"];
-G [label="cabeza"];
+    node  [style="rounded,filled,bold", shape=box, fontname="Nimbus", color="lightgray"];
+    edge  [fontname="Nimbus" weight=2, fontsize=12]
+    
+    A -> B [ label = "profesión" ];
+    A -> C [ label = "edad"];
+    C -> D [ label = "valor"];
+    A -> E [ label = "instancia_de"];
+    E -> F [ label = "subclase_de"];
+    subgraph cluster_1 {
+        F -> G [ label = "tiene"];
+    }
+    A [label="pepe"];
+    B [label="informático"];
+    C [label="edad_de_pepe"];
+    D [label="37"];
+    E [label="Hombre"];
+    F [label="Persona"];
+    G [label="cabeza"];
 }

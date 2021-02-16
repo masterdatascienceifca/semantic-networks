@@ -2,8 +2,8 @@ digraph ejemplo {
 node  [style="rounded,filled,bold", shape=box, fontname="Nimbus", color="lightgray"];
 edge  [fontname="Nimbus" weight=2, fontsize=12]
 
-A -> B [ label = "instancia"];
-D -> B [ label = "instancia"];
+A -> B [ label = "instancia_de"];
+D -> B [ label = "instancia_de"];
 B -> C [ label = "color"];
 D -> E [ label = "color"];
 

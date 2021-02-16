@@ -6,6 +6,6 @@ A -> C [ label = "edad"]
 C -> D [ label = "valor"]
 A [label="pepe"];
 B [label="informático"];
-C [label="edad-de-pepe"];
+C [label="edad_de_pepe"];
 D [label="37"]
 }
